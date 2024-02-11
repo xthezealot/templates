@@ -1,3 +1,4 @@
-# Templates
+# Go HTTP Template
 
-Each stack is in its own branch.
+- Go
+- Templ
