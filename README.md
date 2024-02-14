@@ -2,3 +2,4 @@
 
 - Go
 - Templ
+- Tailwind
