@@ -1,0 +1,12 @@
+{
+	"name": "Project",
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "app",
+	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+	"forwardPorts": [5432],
+	"customizations": {
+		"vscode": {
+			"extensions": ["golang.go", "bradlc.vscode-tailwindcss", "a-h.templ"]
+		}
+	}
+}
