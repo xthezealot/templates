@@ -6,7 +6,14 @@
 	"forwardPorts": [5432],
 	"customizations": {
 		"vscode": {
-			"extensions": ["golang.go", "bradlc.vscode-tailwindcss", "a-h.templ"]
+			"extensions": [
+				"golang.go",
+				"bradlc.vscode-tailwindcss",
+				"a-h.templ",
+				"esbenp.prettier-vscode",
+				"EditorConfig.EditorConfig",
+				"tamasfe.even-better-toml"
+			]
 		}
 	}
 }
