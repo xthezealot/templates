@@ -1,5 +1,0 @@
-[build]
-cmd = "make build"
-include_ext = ["go", "templ", "css", "js"]
-exclude_dir = ["static", "tmp"]
-exclude_regex = [".*_templ.go"]

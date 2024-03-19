@@ -1,18 +1,12 @@
-FROM golang:1.22-alpine AS builder
+FROM ruby:alpine as base
 WORKDIR /app
-COPY . .
-RUN apk add --update --no-cache make git nodejs npm tzdata && \
-	npm install -g tailwindcss esbuild && \
-	go install github.com/cosmtrek/air@latest && \
-	go install github.com/a-h/templ/cmd/templ@latest && \
-	go mod download && \
-	make build
 
-FROM alpine
-WORKDIR /app
-RUN apk add --update --no-cache tzdata
-COPY --from=builder /app/tmp/main .
-ENV ENV production
-ENV ADDR :80
+FROM base as build
+RUN apk add --no-cache build-base && \
+	gem install sinatra rackup erb
+
+FROM base
+COPY --from=build /usr/local/bundle /usr/local/bundle
+COPY . .
 EXPOSE 80
-CMD ["./main"]
+CMD ["ruby", "app.rb", "-o", "0.0.0.0", "-p", "80"]
