@@ -1,0 +1,9 @@
+.air.toml
+.devcontainer
+.DS_Store
+.env*
+.git*
+*_templ.go
+static/**/*.css
+static/**/*.js
+tmp
