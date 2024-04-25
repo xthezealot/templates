@@ -13,8 +13,8 @@ git clone --depth=1 --branch=go-web https://github.com/xthezealot/templates.git 
 
 ## Usage
 
-1. Set .env config
-2. Use Makefile commands:
+1. Set `.env` config
+2. Use commands from `Makefile`:
    ```sh
    # Run the server in live-reload mode
    make dev
