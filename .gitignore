@@ -1,2 +1,6 @@
+.env*
 *_templ.go
+static/main.css
 tmp
+
+!.env.example

@@ -7,14 +7,14 @@
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"golang.go",
 				"a-h.templ",
 				"bradlc.vscode-tailwindcss",
-				"stivo.tailwind-fold",
+				"dprint.dprint",
 				"EditorConfig.EditorConfig",
-				"esbenp.prettier-vscode",
-				"tamasfe.even-better-toml",
-				"GitHub.copilot"
+				"GitHub.copilot",
+				"golang.go",
+				"stivo.tailwind-fold",
+				"tamasfe.even-better-toml"
 			]
 		}
 	}

@@ -1,9 +1,11 @@
 .air.toml
 .devcontainer
+.dprint.json
 .DS_Store
+.editorconfig
 .env*
 .git*
 *_templ.go
-static/**/*.css
-static/**/*.js
+README.md
+static/main.css
 tmp

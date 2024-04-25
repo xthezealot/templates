@@ -1,8 +1,11 @@
 build:
-	tailwindcss -i main.css | esbuild --loader=css --minify > static/main.css
-	esbuild --bundle main.js --minify --outfile=static/main.js
+	tailwindcss -m -i main.css -o static/main.css
 	templ generate
 	go build -o ./tmp/main .
 
 dev:
 	air
+
+fmt:
+	go fmt ./...
+	dprint fmt
