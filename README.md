@@ -5,9 +5,6 @@
 - [Tailwind CSS](https://tailwindcss.com/docs/installation)
 - [Templ](https://templ.guide)
 
-dsdfsg
-dsfds
-
 ## Download
 
 ```sh
@@ -16,13 +13,15 @@ git clone --depth=1 --branch=go-web https://github.com/xthezealot/templates.git 
 
 ## Usage
 
-```sh
-# Run the server in live-reload mode
-make dev
+1. Set .env config
 
-# Format all the code
-make fmt
+2. ```sh
+   # Run the server in live-reload mode
+   make dev
 
-# Build the final Docker image
-make build
-```
+   # Format all the code
+   make fmt
+
+   # Build the final Docker image
+   make build
+   ```
