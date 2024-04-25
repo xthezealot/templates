@@ -1,6 +1,7 @@
 # Go Web Template
 
 - [Go](https://pkg.go.dev/net/http)
+- [HTMX](https://htmx.org/docs/)
 - [PostgreSQL](https://www.postgresql.org/docs/current/index.html)
 - [Tailwind CSS](https://tailwindcss.com/docs/installation)
 - [Templ](https://templ.guide)
