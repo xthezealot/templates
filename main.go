@@ -29,5 +29,5 @@ func main() {
 	// Server run
 
 	log.Println("Listening on " + os.Getenv("ADDR"))
-	log.Panicln(http.ListenAndServe(os.Getenv("ADDR"), http.TimeoutHandler(http.DefaultServeMux, time.Hour, "")))
+	log.Panicln(http.ListenAndServe(os.Getenv("ADDR"), http.TimeoutHandler(cleanPathHandler(http.DefaultServeMux), time.Hour, "")))
 }
