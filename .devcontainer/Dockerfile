@@ -1,6 +1,6 @@
 FROM golang:1.22-alpine
 
-RUN apk add --update --no-cache curl git make tzdata && \
+RUN apk add --update --no-cache git make tzdata && \
 	wget -O- https://dprint.dev/install.sh | sh && \
 	ln -s ~/.dprint/bin/dprint /usr/local/bin/dprint && \
 	wget -O /usr/local/bin/tailwindcss https://github.com/tailwindlabs/tailwindcss/releases/latest/download/tailwindcss-linux-arm64 && \
