@@ -2,4 +2,5 @@
 cmd = "make build"
 include_ext = ["go", "templ", "css", "js"]
 exclude_dir = ["tmp"]
+exclude_file = ["static/main.css"]
 exclude_regex = [".*_templ.go"]
