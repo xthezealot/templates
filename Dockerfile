@@ -2,10 +2,8 @@ FROM golang:1.22-alpine AS builder
 WORKDIR /app
 COPY . .
 RUN apk add --update --no-cache git make tzdata && \
-	wget -O /usr/local/bin/tailwindcss https://github.com/tailwindlabs/tailwindcss/releases/latest/download/tailwindcss-linux-arm64 && \
-	chmod +x /usr/local/bin/tailwindcss && \
+	wget -O /usr/local/bin/tailwindcss https://github.com/tailwindlabs/tailwindcss/releases/latest/download/tailwindcss-linux-arm64 && chmod +x /usr/local/bin/tailwindcss && \
 	go install github.com/a-h/templ/cmd/templ@latest && \
-	go mod download && \
 	make build
 
 FROM alpine
