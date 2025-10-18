@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/react-dom": "latest"
+  }
+}
