@@ -1,9 +1,21 @@
 {
+  "name": "bunserver",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "tsc --noEmit && ultracite check",
+    "fmt": "sort-package-json && ultracite fix",
+    "start": "bun index.tsx"
+  },
   "dependencies": {
     "react-dom": "latest"
   },
   "devDependencies": {
+    "@biomejs/biome": "latest",
     "@types/bun": "latest",
-    "@types/react-dom": "latest"
+    "@types/react-dom": "latest",
+    "sort-package-json": "latest",
+    "typescript": "latest",
+    "ultracite": "latest"
   }
 }
